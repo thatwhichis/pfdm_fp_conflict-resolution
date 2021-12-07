@@ -56,7 +56,8 @@ function preloadCharacter(json) {
 
 // Called once
 function setup() {
-    createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
+    let canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
+    canvas.center('horizontal');
     rectMode(CENTER);
     textAlign(CENTER, CENTER);
 
