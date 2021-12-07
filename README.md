@@ -1,39 +1,28 @@
-## Welcome to GitHub Pages
+## Fake Generic Pocketable Monster RPG Conflict Resolution System
 
-You can use the [editor on GitHub](https://github.com/thatwhichis/pfdm_fp_conflict-resolution/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+_Fake Generic Pocketable Monster RPG Conflict Resolution System_ was an exercise incorporating all aspects of programming covered in the class, including but not limited to: either user interaction or external data, classes, iteration, and appropriately named variables. For this exercise I implemented a prototype monster conflict resolution system based loosely on concepts from [Pokémon](https://www.pokemon.com/) and the [Versu](https://versu.com/) interactive storytelling platform using [Tracery](https://tracery.io/); a monster appears, the user selects a representative monster, then the user selects actions for their monster to take to attempt to resolve a conflict with the other monster.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Concepts Included
+- Interaction: The user interacts via mouse presses of instanced buttons.
+- External Data: Conflict script and character attributes are loaded from JSON files.
+- Classes: Uses modification of pre-existing button class and new character class.
+- Iteration: Demonstrates three different JavaScript for-loop syntaxes.
+- Appropriately named variables: I hope so!
 
-### Markdown
+### Outstanding Issues/Bugs
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As is, I am unaware of any immediate "bugs," but am very aware of conceptual shortcomings in this rudimentary prototype that could be expanded in the future.
 
-```markdown
-Syntax highlighted code block
+- Conflict script in sampleTextData.json ends up being very repetitive in the current implementation; in the future, I think it would be better to expand usage of Tracery to allow for further variance of character-specific actions and break more descriptive actions into the separate character files.
 
-# Header 1
-## Header 2
-### Header 3
+- Available character actions should be more dependent on the specific character and reactions to previous actions taken.
 
-- Bulleted
-- List
+- For the scope of this prototype only two Character properties were implemented: introversion and energy. This is a deeply flawed system that should definitely be reconsidered and expanded.
 
-1. Numbered
-2. List
+- From a design/experience standpoint, UI feedback is almost nonexistent and would need to be implemented/expanded.
 
-**Bold** and _Italic_ and `Code` text
+### Instructions On Running The Project
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thatwhichis/pfdm_fp_conflict-resolution/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+If available, the project should be interactable in the iframe below. Should any issues arise, the project can be cloned and src directory opened in Visual Studio Code via LiveServer.
 
 <iframe src="./src/index.html" width="600" height="500"></iframe>
