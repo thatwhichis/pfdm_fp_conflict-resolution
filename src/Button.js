@@ -118,7 +118,7 @@ class Button {
 
             // TODO - this may be worth breaking out into a more fleshed out
             // way of calling functions by name
-            //this._func();
+            // this._func();
             if (typeof this._func === 'function') {
                 this._func(this._args);
             } else if (typeof this._func === 'string') {
