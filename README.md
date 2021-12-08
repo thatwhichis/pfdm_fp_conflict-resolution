@@ -15,9 +15,13 @@ As is, I am unaware of any immediate "bugs," but am very aware of conceptual sho
 
 - Conflict script in sampleTextData.json ends up being very repetitive in the current implementation; in the future, I think it would be better to expand usage of Tracery to allow for further variance of character-specific actions and break more descriptive actions into the separate character files. This ties heavily into the next bullet point.
 
-- Available character actions should be more dependent on the specific character and reactions to previous actions taken. In other words, the conflict JSON may better be represented as conflict "events," while available "actions" and their effects may be better dictated by the predilictions of specific characters.
+- Available character actions should be more dependent on the specific character and reactions to previous actions taken. In other words, the conflict JSON may better be represented as conflict "events," while available "actions" and their effects may be better dictated by the predilections of specific characters.
 
 - For the scope of this prototype only two Character properties were implemented: introversion and energy. This is a deeply flawed system that should definitely be reconsidered and expanded.
+
+- How the antagonistic monster chooses actions should be reconsidered with application of the monster's properties included in its decision-making process (currently random based on available options in the current text node).
+
+- Action effects should be rebalanced and made more systemically meaningful. 
 
 - From a design/experience standpoint, UI feedback is almost nonexistent and would need to be implemented/expanded.
 
